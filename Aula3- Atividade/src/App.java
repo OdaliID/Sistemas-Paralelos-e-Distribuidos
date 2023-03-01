@@ -8,7 +8,7 @@ public class App {
             threads[i].start();  // Inicia a thread
         }
         
-        for (int i = 0; i < threads.length; i++) { 
+        for (int i = 0; i < threads.length; i++) { // Aguarda as threads terminarem
             threads[i].join();
         }
         
