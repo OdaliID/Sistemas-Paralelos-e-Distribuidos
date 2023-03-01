@@ -7,7 +7,7 @@ class Contador {
     
     
     public synchronized int getNumero() {
-        return this.numero;
+        return this.numero; // Este metodo retorna um valor, sem modificá-lo
     }
 }
 
