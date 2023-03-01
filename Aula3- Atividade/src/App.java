@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws InterruptedException {
         Contador contador = new Contador(); // Instancia o objeto contador
-        Thread[] threads = new Thread[1000];
+        Thread[] threads = new Thread[1000];  // Cria um array de threads
         
         for (int i = 0; i < threads.length; i++) {
             threads[i] = new Thread(new Tarefa(contador));
