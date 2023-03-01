@@ -27,5 +27,10 @@ Percorrer novamente o array usando outro for, aguardando as 1000 threads termina
 Exibir o valor de contador.getNumero().
 Recordando a aula, note que a propriedade numero da classe Contador, por meio do método incrementar(), é uma região crítica.
 
+Execução do código:
 
-Etapa 2 - Responder o formulário a seguir
+Abra um terminal na pasta onde o arquivo "App.java" está localizado e compile o arquivo "App.java" usando o comando:
+javac App.java
+
+
+
