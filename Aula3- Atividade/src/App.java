@@ -8,8 +8,8 @@ public class App {
             threads[i].start();  // Inicia a thread
         }
         
-        for (int i = 0; i < threads.length; i++) { // Aguarda as threads terminarem
-            threads[i].join();  
+        for (int i = 0; i < threads.length; i++) { 
+            threads[i].join();
         }
         
         System.out.println("Valor final: " + contador.getNumero());
