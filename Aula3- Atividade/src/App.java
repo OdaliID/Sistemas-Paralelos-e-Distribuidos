@@ -5,7 +5,7 @@ public class App {
         
         for (int i = 0; i < threads.length; i++) {  // Cria e inicia as threads
             threads[i] = new Thread(new Tarefa(contador));  // Cada thread recebe uma instância do contador via construtor
-            threads[i].start(); 
+            threads[i].start();  // Inicia a thread
         }
         
         for (int i = 0; i < threads.length; i++) {
