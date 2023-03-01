@@ -21,8 +21,8 @@ class Tarefa implements Runnable {
     @Override
     public void run() {
         try {
-            Thread.sleep(100); // Incrementa o contador
-            contador.incrementar();
+            Thread.sleep(100); 
+            contador.incrementar(); // Incrementa o contador
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
