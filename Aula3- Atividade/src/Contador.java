@@ -2,8 +2,9 @@ class Contador {
     private int numero;
     
     public synchronized void incrementar() {
-        this.numero++;
-    }
+        this.numero++; // O método incrementar() é sincronizado para garantir que
+    }                    // apenas uma thread por vez possa acessá-lo
+    
     
     public synchronized int getNumero() {
         return this.numero;
