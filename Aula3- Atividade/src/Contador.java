@@ -14,14 +14,14 @@ class Contador {
 class Tarefa implements Runnable {
     private Contador contador;
     
-    public Tarefa(Contador contador) {
-        this.contador = contador;
+    public Tarefa(Contador contador) { // O construtor recebe uma instância de Contador
+        this.contador = contador;       // que será utilizada para incrementar o contador
     }
     
     @Override
     public void run() {
         try {
-            Thread.sleep(100);
+            Thread.sleep(100); // Incrementa o contador
             contador.incrementar();
         } catch (InterruptedException e) {
             e.printStackTrace();
