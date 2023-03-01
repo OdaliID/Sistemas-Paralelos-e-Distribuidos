@@ -32,5 +32,6 @@ Execução do código:
 Abra um terminal na pasta onde o arquivo "App.java" está localizado e compile o arquivo "App.java" usando o comando:
 javac App.java
 
-
+E execute o arquivo "App.java" usando:
+java App
 
