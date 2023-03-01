@@ -12,6 +12,6 @@ public class App {
             threads[i].join();
         }
         
-        System.out.println("Valor final: " + contador.getNumero());
+        System.out.println("Valor final: " + contador.getNumero()); // Exibe o valor final do contador
     }
 }
