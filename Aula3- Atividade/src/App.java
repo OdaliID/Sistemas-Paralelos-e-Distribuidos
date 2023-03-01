@@ -1,6 +1,6 @@
 public class App {
     public static void main(String[] args) throws InterruptedException {
-        Contador contador = new Contador();
+        Contador contador = new Contador(); // Instancia o objeto contador
         Thread[] threads = new Thread[1000];
         
         for (int i = 0; i < threads.length; i++) {
