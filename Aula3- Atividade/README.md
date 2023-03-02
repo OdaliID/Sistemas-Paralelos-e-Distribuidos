@@ -35,3 +35,12 @@ javac App.java
 E execute o arquivo "App.java" usando:
 java App
 
+Questionario:
+
+Qual deveria ser o valor apresentado ao chamar contador.getNumero()?*
+
+O valor de contador.getNumero() foi sempre correto?*
+Sim
+Não
+
+Por que o valor de contador.getNumero() pode não ter sido o esperado?*
