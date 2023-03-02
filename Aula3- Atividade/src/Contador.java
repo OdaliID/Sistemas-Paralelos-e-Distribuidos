@@ -2,27 +2,26 @@ class Contador {
     private int numero;
     
     public synchronized void incrementar() {
-        this.numero++; // O método incrementar() é sincronizado para garantir que
-    }                    // apenas uma thread por vez possa acessá-lo
-    
+        this.numero++;
+    }
     
     public synchronized int getNumero() {
-        return this.numero; // Este metodo retorna um valor, sem modificá-lo
+        return this.numero;
     }
 }
 
 class Tarefa implements Runnable {
     private Contador contador;
     
-    public Tarefa(Contador contador) { // O construtor recebe uma instância de Contador
-        this.contador = contador;       // que será utilizada para incrementar o contador
+    public Tarefa(Contador contador) {
+        this.contador = contador;
     }
     
     @Override
     public void run() {
         try {
-            Thread.sleep(100); 
-            contador.incrementar(); // Incrementa o contador
+            Thread.sleep(100);
+            contador.incrementar();
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
