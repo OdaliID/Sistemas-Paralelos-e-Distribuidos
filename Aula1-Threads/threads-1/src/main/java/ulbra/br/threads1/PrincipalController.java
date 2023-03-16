@@ -24,4 +24,4 @@ public class PrincipalController {
             return "Executou...";
         }
 }
-http://localhost:8080/thread
+/*http://localhost:8080/thread*/
